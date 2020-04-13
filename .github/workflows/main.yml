@@ -51,8 +51,8 @@ jobs:
           cd Build
           make
 
-      - name: Running make run
-        run: |
-          cd Build
-          make run
-          cd ..
+      # - name: Running make run
+      #   run: |
+      #     cd Build
+      #     make run
+      #     cd ..
