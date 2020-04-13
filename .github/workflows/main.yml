@@ -51,8 +51,9 @@ jobs:
           cd Build
           make
 
-      # - name: Running make run
-      #   run: |
-      #     cd Build
-      #     make run
-      #     cd ..
+      - name: Running make run
+        if: ${{ matrix.os == 'macos-latest' }}
+        run: |
+          cd Build
+          make run
+          cd ..
