@@ -46,9 +46,13 @@ jobs:
           cd ..
 
       # Runs make
-      - name: Running make and make run
+      - name: Running make
         run: |
           cd Build
           make
+
+      - name: Running make run
+        run: |
+          cd Build
           make run
           cd ..
