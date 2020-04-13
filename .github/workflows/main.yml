@@ -27,7 +27,7 @@ jobs:
 
       # Only install for ubuntu
       - name: Installing dependencies
-        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'ibimti-16.04' }}
+        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'ubuntu-16.04' }}
         env:
           PACKAGES: libtool-bin
         run: sudo apt install ${PACKAGES}
